@@ -1,0 +1,62 @@
+# Derby
+
+> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Active Passive Anchor Design](https://derby.geotechnical-engineering.biz/active-passive-anchor-design/)
+- [Atterberg Limits](https://derby.geotechnical-engineering.biz/atterberg-limits/)
+- [Base Isolation Seismic Design](https://derby.geotechnical-engineering.biz/base-isolation-seismic-design/)
+- [Cbr Study Road Design](https://derby.geotechnical-engineering.biz/cbr-study-road-design/)
+- [Cone Penetration](https://derby.geotechnical-engineering.biz/cone-penetration/)
+- [Contaminated Soil Remediation](https://derby.geotechnical-engineering.biz/contaminated-soil-remediation/)
+- [Debris Flow Analysis](https://derby.geotechnical-engineering.biz/debris-flow-analysis/)
+- [Diaphragm Wall Design](https://derby.geotechnical-engineering.biz/diaphragm-wall-design/)
+- [Differential Settlement Analysis](https://derby.geotechnical-engineering.biz/differential-settlement-analysis/)
+- [Direct Shear](https://derby.geotechnical-engineering.biz/direct-shear/)
+- [Driven Pile Design](https://derby.geotechnical-engineering.biz/driven-pile-design/)
+- [Dynamic Compaction Design](https://derby.geotechnical-engineering.biz/dynamic-compaction-design/)
+- [Existing Pavement Evaluation](https://derby.geotechnical-engineering.biz/existing-pavement-evaluation/)
+- [Exploratory Pit](https://derby.geotechnical-engineering.biz/exploratory-pit/)
+- [Factor Safety](https://derby.geotechnical-engineering.biz/factor-safety/)
+- [Field Vane Shear](https://derby.geotechnical-engineering.biz/field-vane-shear/)
+- [Flat Dilatometer](https://derby.geotechnical-engineering.biz/flat-dilatometer/)
+- [Flexible Pavement Design](https://derby.geotechnical-engineering.biz/flexible-pavement-design/)
+- [Foundations](https://derby.geotechnical-engineering.biz/foundations/)
+- [Foundations Fill](https://derby.geotechnical-engineering.biz/foundations-fill/)
+- [Geomembrane Specification](https://derby.geotechnical-engineering.biz/geomembrane-specification/)
+- [Geophysics](https://derby.geotechnical-engineering.biz/geophysics/)
+- [Geotechnical Analysis Soft Soil](https://derby.geotechnical-engineering.biz/geotechnical-analysis-soft-soil/)
+- [Geotechnical Drainage Design](https://derby.geotechnical-engineering.biz/geotechnical-drainage-design/)
+- [Geotechnical Road Drainage](https://derby.geotechnical-engineering.biz/geotechnical-road-drainage/)
+- [Grain Size Analysis](https://derby.geotechnical-engineering.biz/grain-size-analysis/)
+- [Ground Improvement](https://derby.geotechnical-engineering.biz/ground-improvement/)
+- [Ground Penetrating Radar](https://derby.geotechnical-engineering.biz/ground-penetrating-radar/)
+- [Grouting Design](https://derby.geotechnical-engineering.biz/grouting-design/)
+- [In Situ Testing](https://derby.geotechnical-engineering.biz/in-situ-testing/)
+- [Investigation](https://derby.geotechnical-engineering.biz/investigation/)
+- [Jet Grouting Design](https://derby.geotechnical-engineering.biz/jet-grouting-design/)
+- [Laboratory](https://derby.geotechnical-engineering.biz/laboratory/)
+- [Laboratory Cbr](https://derby.geotechnical-engineering.biz/laboratory-cbr/)
+- [Laboratory Permeability](https://derby.geotechnical-engineering.biz/laboratory-permeability/)
+- [Landfill Geotechnics](https://derby.geotechnical-engineering.biz/landfill-geotechnics/)
+- [Lime Cement Stabilization](https://derby.geotechnical-engineering.biz/lime-cement-stabilization/)
+- [Mechanically Stabilized Earth](https://derby.geotechnical-engineering.biz/mechanically-stabilized-earth/)
+- [Micropile Design](https://derby.geotechnical-engineering.biz/micropile-design/)
+- [Organic Soil Management](https://derby.geotechnical-engineering.biz/organic-soil-management/)
+- [Pavement Subgrade Design](https://derby.geotechnical-engineering.biz/pavement-subgrade-design/)
+- [Pile Skin Friction Vs](https://derby.geotechnical-engineering.biz/pile-skin-friction-vs/)
+- [Plate Load](https://derby.geotechnical-engineering.biz/plate-load/)
+- [Porchet Double Ring Infiltrometer](https://derby.geotechnical-engineering.biz/porchet-double-ring-infiltrometer/)
+- [Preloading Surcharge Design](https://derby.geotechnical-engineering.biz/preloading-surcharge-design/)
+- [Raft Mat Foundation Design](https://derby.geotechnical-engineering.biz/raft-mat-foundation-design/)
+- [Residual Soil Characterization](https://derby.geotechnical-engineering.biz/residual-soil-characterization/)
+- [Retaining Wall Design](https://derby.geotechnical-engineering.biz/retaining-wall-design/)
+- [Road Embankment Design](https://derby.geotechnical-engineering.biz/road-embankment-design/)
+- [Road Geotechnics](https://derby.geotechnical-engineering.biz/road-geotechnics/)
+
+## Contact
+- Website: https://derby.geotechnical-engineering.biz/
+
+## About
+This page provides information about geotechnical engineering services available in United States.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
