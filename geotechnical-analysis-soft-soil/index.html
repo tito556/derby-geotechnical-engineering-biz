@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -183,7 +219,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #D97706;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#D97706;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Undrained shear strength (cu)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">40 - 120 kPa</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Stiffness modulus (E')</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">20 - 80 MPa</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Plasticity index (PI)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">25 - 45 %</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Permeability (k)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">1e-9 to 1e-7 m/s</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Swelling pressure</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">50 - 200 kPa</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Effective friction angle (phi')</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">20 - 28 degrees</td></tr></tbody></table></div>
 
-        <h2>Common questions</h2><details class="faq"><summary>What is the typical cost range for a geotechnical analysis for a soft soil tunnel in Derby?</summary><p>The cost for a comprehensive geotechnical <a href="../foundations-fill/" data-interlink="1">analysis</a> for a soft soil tunnel in Derby typically ranges from £2,870 to £15,020. This depends on the tunnel length, the number of boreholes, and the complexity of the laboratory testing required. Contact us for a detailed quote based on your project scope.</p></details><details class="faq"><summary>How long does a typical ground investigation for a Derby tunnel take?</summary><p>A standard investigation involving two boreholes with rotary coring and a full suite of lab tests takes between 4 and 6 weeks. This includes mobilisation, drilling, sample transport, and laboratory <a href="../foundations-fill/" data-interlink="1">analysis</a>. Deeper or more variable ground can extend the timeline.</p></details><details class="faq"><summary>What are the main hazards of tunneling in Mercia Mudstone?</summary><p>The primary hazards are face instability due to low undrained shear strength, water ingress along gypsum veins, and long-term swelling pressures on the lining. The mudstone can also have high plasticity, making it sticky and difficult to excavate with tunnel boring machines.</p></details><details class="faq"><summary>Do I need a numerical model for a short tunnel in Derby?</summary><p>We recommend it for any tunnel where settlement of adjacent structures is a concern. Even a short tunnel can cause 10-30 mm of surface settlement, which may damage heritage buildings in Derby's city centre. A simple 2D model is often sufficient for short lengths.</p></details><details class="faq"><summary>What design parameters do you provide for the tunnel lining?</summary><p>We provide the undrained shear strength (cu), the drained friction angle (phi'), the stiffness modulus (E'), and the swelling pressure. These are derived from laboratory tests on representative samples. We also provide the at-rest earth pressure coefficient (K0) for the mudstone.</p></details>
+        <h2>Common questions</h2><details class="faq"><summary>What is the typical cost range for a geotechnical analysis for a soft soil tunnel in Derby?</summary><p>The cost for a comprehensive geotechnical <a href="../foundations-fill/" data-interlink="1">analysis</a> for a soft soil tunnel in Derby typically ranges from £2,870 to £15,020. This depends on the tunnel length, the number of boreholes, and the complexity of the laboratory testing required. Contact us for a detailed quote based on your project scope.</p></details><details class="faq"><summary>How long does a typical ground investigation for a Derby tunnel take?</summary><p>A standard investigation involving two boreholes with rotary coring and a full suite of lab tests takes between 4 and 6 weeks. This includes mobilisation, drilling, sample transport, and laboratory <a href="../foundations-fill/" data-interlink="1">analysis</a>. Deeper or more variable ground can extend the timeline.</p></details><details class="faq"><summary>What are the main hazards of tunneling in Mercia Mudstone?</summary><p>The primary hazards are face instability due to low undrained shear strength, water ingress along gypsum veins, and long-term swelling pressures on the lining. The mudstone can also have high plasticity, making it sticky and difficult to excavate with tunnel boring machines.</p></details><details class="faq"><summary>Do I need a numerical model for a short tunnel in Derby?</summary><p>We recommend it for any tunnel where settlement of adjacent structures is a concern. Even a short tunnel can cause 10-30 mm of surface settlement, which may damage heritage buildings in Derby's city centre. A simple 2D model is often sufficient for short lengths.</p></details><details class="faq"><summary>What design parameters do you provide for the tunnel lining?</summary><p>We provide the undrained shear strength (cu), the drained friction angle (phi'), the stiffness modulus (E'), and the swelling pressure. These are derived from <a href="/laboratory/">laboratory</a> tests on representative samples. We also provide the at-rest earth pressure coefficient (K0) for the mudstone.</p></details>
     
     <section class="block map-block" style="padding:3rem 1.5rem">
       <div style="max-width:1200px;margin:0 auto">

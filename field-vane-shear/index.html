@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Process overview</h2><div>Derby sits at an average elevation of 55 m AOD, but the low-lying areas beside the Derwent contain soft clays with su values as low as 20 kPa near surface. The vane shear test here captures both peak and remoulded strength, so we can calculate the sensitivity ratio (St = su_peak / su_remoulded). A St > 8 flags high sensitivity – crucial for foundation design in quick clays. We integrate the results with a compression simple test on intact tube samples to validate the in-situ versus lab strength ratio, following the guidance in BS 5930:2015.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Local context</h2><p>Derby’s geology combines glacial till with thick river terrace deposits and pockets of compressible peat. During wet winters, the water table can rise within 1 m of the surface, softening the upper clays. If you rely only on laboratory triaxial data from disturbed samples, you risk overestimating su by 25–40 %. Running a field vane shear test at multiple depths on the same day avoids that error and gives you the real remoulded strength needed for slope stability checks.</p>
+        <h2>Local context</h2><p>Derby’s geology combines glacial till with thick river terrace deposits and pockets of compressible peat. During wet winters, the water table can rise within 1 m of the surface, softening the upper clays. If you rely only on <a href="/laboratory/">laboratory</a> triaxial data from disturbed samples, you risk overestimating su by 25–40 %. Running a field vane shear test at multiple depths on the same day avoids that error and gives you the real remoulded strength needed for slope stability checks.</p>
 
         
     <section class="block mid-cta-9784-9784" style="padding:2rem 0">

@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Process overview</h2><div>Derby's seasonal rainfall pattern, with over 650 mm annually, means infiltration rates fluctuate significantly between dry summer and wet winter conditions. Our testing protocol accounts for this variability by conducting multiple runs at the same location, measuring steady-state flow rather than initial absorption. The double-ring infiltrometer isolates vertical flow from lateral spreading, which is essential on the clay-rich Mercia Mudstone where smearing can reduce rates by 40%. We also perform <a href="../soil-classification/">soil classification</a> on recovered samples to identify fines content and plasticity, both of which strongly influence long-term infiltration performance. <ul><li>Porchet test: 0.15–0.30 m borehole, constant head method, ideal for soakaway design</li><li>Double-ring: 0.30 m inner ring, 0.55 m outer ring, measures field-saturated hydraulic conductivity</li></ul> Each test is conducted at the proposed invert depth of the drainage feature, with a minimum of three tests per location to account for spatial variability.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Local context</h2><p>A housing development in Derby's Allestree area recently required redesign of its drainage network after initial infiltration tests showed rates of only 0.02 m/day instead of the assumed 0.15 m/day. The developer had skipped seasonally representative testing, relying on a single dry-weather reading. We have seen similar cases across the city where clay-rich till or compacted fill layers block percolation. If infiltration results are overestimated, soakaways fail within months, leading to surface flooding, structural damage to foundations, and enforcement action by the Environment Agency. The risk multiplies when multiple tests are not averaged — a single high outlier can mask a predominantly low-permeability site.</p>
+        <h2>Local context</h2><p>A housing development in Derby's Allestree area recently required redesign of its drainage network after initial infiltration tests showed rates of only 0.02 m/day instead of the assumed 0.15 m/day. The developer had skipped seasonally representative testing, relying on a single dry-weather reading. We have seen similar cases across the city where clay-rich till or compacted fill layers block percolation. If infiltration results are overestimated, soakaways fail within months, leading to surface flooding, structural damage to <a href="/foundations/">foundations</a>, and enforcement action by the Environment Agency. The risk multiplies when multiple tests are not averaged — a single high outlier can mask a predominantly low-permeability site.</p>
 
         
     <section class="block mid-cta-9784-9784" style="padding:2rem 0">

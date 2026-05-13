@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Process overview</h2><div>Derby sits on the River Derwent floodplain, but the city expanded rapidly during the Industrial Revolution, and much of the housing and industrial estates were built on made ground from old mine workings and brick pits. The urban geology is a patchwork of alluvium, river terrace gravels, and glacial till, with occasional lenses of peat that can cause differential settlement under road embankments. Our team has mapped these deposits across dozens of sites, and we always start with a thorough classification. For one section of the A38 we combined plate load tests with <a href="../existing-pavement-evaluation/">evaluacion de pavimentos</a> to verify that the existing asphalt could be reused as a base layer, which cut the project carbon footprint by nearly 30%. The key is to understand the variability, because a road that looks uniform on plan often hides sudden changes in subgrade stiffness.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Local context</h2><p>Derby sits at about 50 metres above sea level, but the risk is not altitude — it is the presence of soft alluvial clays along the Derwent corridor. In the 2019 floods, several roads in the Pride Park area suffered subgrade saturation that reduced bearing capacity by over 60% within 48 hours. For road geotechnics in Derby, we model worst-case moisture scenarios using the soaked CBR test, and we design drainage layers that can handle a 1-in-100-year event. If the subgrade is prone to softening, we specify a capping layer of granular material or treat the soil with lime. We have seen roads built on untreated clay fail within three winters, so the extra investment in subgrade preparation pays for itself many times over in reduced maintenance.</p>
+        <h2>Local context</h2><p>Derby sits at about 50 metres above sea level, but the risk is not altitude — it is the presence of soft alluvial clays along the Derwent corridor. In the 2019 floods, several roads in the Pride Park area suffered subgrade saturation that reduced bearing capacity by over 60% within 48 hours. For <a href="/road-geotechnics/">road geotechnics</a> in Derby, we model worst-case moisture scenarios using the soaked CBR test, and we design drainage layers that can handle a 1-in-100-year event. If the subgrade is prone to softening, we specify a capping layer of granular material or treat the soil with lime. We have seen roads built on untreated clay fail within three winters, so the extra investment in subgrade preparation pays for itself many times over in reduced maintenance.</p>
 
         
     <section class="block mid-cta-9784-9784" style="padding:2rem 0">

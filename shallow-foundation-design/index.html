@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Process overview</h2><div>Eurocode 7 (BS EN 1997-1:2004) and BS 5930 are the backbone of every calculation we run in Derby. The Mercia Mudstone can be tricky – it weathers rapidly once exposed and loses strength within days. We always run index tests and triaxial suites within a week of sampling. Derby's clay content means we pay close attention to Atterberg limits and plasticity index. That data feeds directly into the shallow foundation design model. Soil variability across a single site is common. We use a phased approach: initial boreholes, then targeted follow-ups where geology changes. For Improvement cases we cross-reference with columnas de grava to verify bearing capacity gains. The whole process is documented under UKAS-accredited ISO 17025 protocols.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Local context</h2><p>Derby sits on a mix of river terrace deposits and glacial till. The Derwent floodplain brings high groundwater in winter – that can soften excavation bases overnight if not drained. Clay shrinkage during dry summers is another risk. We have seen shallow foundations lose support after prolonged drought. The city's humid temperate climate means moisture cycles are aggressive. A solid shallow foundation design must account for seasonal water table changes. We always recommend a drainage layer and blinded hardcore to protect the formation. Ignoring these local patterns can lead to uneven settlement within two years of handover.</p>
+        <h2>Local context</h2><p>Derby sits on a mix of river terrace deposits and glacial till. The Derwent floodplain brings high groundwater in winter – that can soften excavation bases overnight if not drained. Clay shrinkage during dry summers is another risk. We have seen shallow <a href="/foundations/">foundations</a> lose support after prolonged drought. The city's humid temperate climate means moisture cycles are aggressive. A solid shallow foundation design must account for seasonal water table changes. We always recommend a drainage layer and blinded hardcore to protect the formation. Ignoring these local patterns can lead to uneven settlement within two years of handover.</p>
 
         
     <section class="block mid-cta-9784-9784" style="padding:2rem 0">
