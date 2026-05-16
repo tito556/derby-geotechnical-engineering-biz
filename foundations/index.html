@@ -138,7 +138,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -149,6 +149,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head><body>
 
@@ -180,12 +236,10 @@ body>*{max-width:100vw}
       </div>
     </section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/pilotes-friccion-punta-4.webp" alt="Foundations in Derby" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/pilotes-hincados-1.webp" alt="Foundations in Derby" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>In Derby, foundation design must respond directly to the ground conditions shaped by the River Derwent’s alluvial history and the surrounding Mercia Mudstone Group. Our foundation services begin with a thorough understanding of these local soils, where soft silts, sands, and gravels overlying competent mudstone create highly variable bearing capacities and potential for differential settlement. A desk study combined with targeted <a href="/investigation/">ground investigation</a> is the essential first step, allowing us to map the interface between superficial deposits and bedrock. This early phase identifies risks such as made ground in the city centre or natural compressible layers, ensuring any foundation solution is compliant with Eurocode 7 and the UK National Annex, as implemented through BS EN 1997-2.</p>
 <p>The methodology we employ is dictated by the need for reliable, repeatable data in line with British Standards. For most Derby sites, the <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> remains the cornerstone for assessing granular alluvium and the weathered zone of the mudstone, providing N-values that correlate directly to allowable bearing pressure. Where the profile includes soft cohesive soils, we deploy the <a href="/cone-penetration/">Cone Penetration Test (CPT)</a> to obtain a continuous stratigraphic log and derive undrained shear strength without the disturbance inherent in traditional boring. To refine stiffness parameters for settlement analysis, particularly on sensitive or variable ground, <a href="/in-situ-testing/">in‑situ testing</a> with the <a href="/flat-dilatometer/">Flat Dilatometer Test (DMT)</a> provides high-resolution modulus data crucial for designing shallow foundations on improved ground.</p>
 <p>Projects across Derby, from residential extensions in Mickleover to commercial units on Pride Park, demand a flexible approach to foundation investigation. An <a href="/exploratory-pit/">exploratory test pit</a> is often the most practical method to visually confirm foundation depths of existing structures or to expose the top of bedrock on sloping sites. For heavy industrial loads or warehouse slabs where ground stiffness governs design, a <a href="/plate-load/">plate load test (PLT)</a> gives a direct measurement of the modulus of subgrade reaction, validating assumptions made from borehole data. On river terrace gravels where groundwater is a factor, the <a href="/field-vane-shear/">field vane shear test (VST)</a> quickly quantifies the in‑situ strength of any peat or soft clay lenses that could compromise a traditional strip footing, allowing the engineer to confidently select a deepened or piled alternative.</p>
-<img src="/img/cimentaciones-superficiales-3.webp" alt="Foundations in Derby" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>Our process delivers a factual report containing all field logs and laboratory results, followed by an interpretive foundation recommendation that meets the requirements of the NHBC Standards for residential work and the Specification for Ground Investigation (UK). By integrating the most appropriate techniques—from a rapid CPT sounding to a full suite of strength and stiffness tests—we provide Derby’s structural engineers and architects with the geotechnical parameters needed to optimise foundation depth and type. This targeted, standards‑driven approach reduces the risk of unforeseen ground conditions, controls construction costs, and provides a defensible design basis for building control approval.</p></div></section></main>
 </div>
 
@@ -200,7 +254,7 @@ body>*{max-width:100vw}
     if(!el)return;
     var map=L.map(el).setView([52.9233008,-1.4765491],12);
     L.tileLayer('https://{s}.tile-9784.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
-    L.marker([52.9233008,-1.4765491],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Derby").openPopup();
+    L.marker([52.9233008,-1.4765491],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Derby").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();
