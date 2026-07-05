@@ -3,7 +3,7 @@
   "short_name": "Derby",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#0A2540",
+  "theme_color": "#800020",
   "background_color": "#FFFFFF",
   "icons": [
     {
